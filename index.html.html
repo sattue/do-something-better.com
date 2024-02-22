@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do something better</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #92beb1b4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            margin-top: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow images to wrap to the next line if they overflow */
+            max-width: 80%; /* Adjust the max-width to your preference */
+            margin-top: 20px; /* Add some margin to separate from other content */
+        }
+        .image-container img {
+            width: 200px; /* Adjust the width of individual images */
+            margin: 10px; /* Add some margin around each image */
+            border: 2px solid #333; /* Add a border around each image */
+            border-radius: 8px; /* Optional: Add rounded corners to the border */
+        }
+        /* Loading animation */
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px; /* Add some margin to separate from other content */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>do something better!</h1>
+        <p>I'm bored too, so let's do something fun!</p>
+        <div class="image-container"
+        ><img src="https://source.unsplash.com/random/600x500"alt="pinterest"> 
+        ><img src="https://source.unsplash.com/random/400x300"alt="pinterest"> 
+        ><img src="https://source.unsplash.com/random/300x200"alt="pinterest"> 
+        ><img src="https://source.unsplash.com/random/500x400"alt="pinterest"> 
+        <p>Refresh the page to see a new random image!</p>
+    </div>
+</body>
+</html>
